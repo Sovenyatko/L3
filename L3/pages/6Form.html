@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+
+    <form name="user" action="send.php" method="GET">
+        <fieldset>
+          <legend>Персональна інформація</legend>
+          <label for="userName">Ваше ім'я:</label>
+          <input type="text" name="userName" placeholder="Введіть ваше ім'я" id="userName" required>
+          <br>
+          <br>
+          <label for="userAge">Ваш вік:</label>
+          <input type="number" name="userAge" placeholder="Введіть ваш вік" id="userAge" min="1" max="110">
+        </fieldset>
+        <br>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" name="password" placeholder="Введіть ваш пароль" id="password">
+        <br>
+        <br>
+        <label for="male">Жінка</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="female">Чоловік</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <br>
+        <br>
+        <label for="remember">Запамятай мене:</label>
+        <input type="checkbox" name="remember" id="remember">
+        <br>
+        <br>
+        <label for="city">Вкажіть ваше мвсто:</label>
+        <select name="city" id="city">
+          <option value="kyiv">Київ</option>
+          <option value="kherson">Херсон</option>
+          <option value="odesa">Одеса</option>
+          <option value="lviv">Львів</option>
+          <option value="cherkasy">Черкаси</option>
+
+        </select>
+        <br>
+        <br>
+        <label for="message">Введіть своє повідомлення:</label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Подати">
+      </form>
+      
+      <hr>
+      <hr>
+
+</body>
+</html>
